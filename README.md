@@ -1,24 +1,41 @@
-# README
+# JUVO BACKEND TEST
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
 
-Things you may want to cover:
+For this to work you need to install PostgreSQL database in your computer and start a server.
 
-* Ruby version
+You'll need Ruby v2.5.X and Rails v5.2.
 
-* System dependencies
+Install dependencies:
+```
+bundle install
+```
 
-* Configuration
+Create database and migrate the changes:
+```
+rake db:create
+rake db:migrate
+```
 
-* Database creation
+Run the projects
+```
+rails s
+```
 
-* Database initialization
+## Explanation
 
-* How to run the test suite
+The following block is the route to test the application.
 
-* Services (job queues, cache servers, search engines, etc.)
+```ruby
+                    api_v1_companies GET  /api/v1/companies(.:format)                        api/v1/companies#index
+```
 
-* Deployment instructions
+As the requirements are described, this API fetchs information about companies which data are already saved within the app:
+  México: mx
+  Colobia: co
+  EEUU: usa
 
-* ...
+You must send the request as the following example:
+  ``
+  localhost:3000/api/v1/companies?country=COUNTRY
+``
