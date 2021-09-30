@@ -42,7 +42,7 @@ You must send the request as the following example:
   localhost:3000/api/v1/companies?country=COUNTRY
 ``
 
-Finally, as long as you are in the root app directory can run the tests with the following command:
+Finally, as long as you are in the root app directory you can run the tests with the following command:
 
 ``
   rspec
