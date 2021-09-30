@@ -31,11 +31,19 @@ The following block is the route to test the application.
 ```
 
 As the requirements are described, this API fetchs information about companies which data are already saved within the app:
-  México: mx
-  Colobia: co
-  EEUU: usa
-
+ 
+* México: mx
+* Colobia: co
+* EEUU: usa
+ 
 You must send the request as the following example:
-  ``
+
+``
   localhost:3000/api/v1/companies?country=COUNTRY
+``
+
+Finally, as long as you are in the root app directory can run the tests with the following command:
+
+``
+  rspec
 ``
