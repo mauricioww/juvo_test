@@ -1,6 +1,6 @@
 class Api::V1::CompaniesController < Api::V1::ApiV1Controller
   include AvailableCountriesConcern
-  include CountriesHelper
+  include Api::V1::CountriesHelper
 
   before_action :available_country?
   before_action :load_json!
