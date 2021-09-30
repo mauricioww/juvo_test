@@ -27,10 +27,10 @@ rails s
 The following block is the route to test the application.
 
 ```ruby
-                    api_v1_companies GET  /api/v1/companies(.:format)                        api/v1/companies#index
+                    api_v1_companies GET  /api/v1/companies(.:format)                api/v1/companies#index
 ```
 
-As the requirements are described, this API fetchs information about companies which data are already saved within the app:
+As the requirements are described, this API fetchs information about companies which its data is already saved within the app:
  
 * México: mx
 * Colobia: co
