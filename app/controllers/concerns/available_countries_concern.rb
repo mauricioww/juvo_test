@@ -6,7 +6,7 @@ module AvailableCountriesConcern
 
     def available_country?
       if country_params[:country].present?
-        unless Rails.root.join('app', 'resources', "#{params[:country]}.json").exist?
+        unless Rails.root.join('app', 'resources', "#{country_params[:country]}.json").exist?
           render json: { error: "Info Not Found" }, status: 404
         end
       else
